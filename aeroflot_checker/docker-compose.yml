@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  aeroflot-checker:
+    build: .
+    container_name: aeroflot_checker
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Uncomment and set these if you want to pass them via environment variables instead of editing main.py
+    # environment:
+    #   - TELEGRAM_BOT_TOKEN=your_token_here
+    #   - TELEGRAM_CHAT_ID=your_chat_id_here
