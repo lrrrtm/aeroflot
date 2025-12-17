@@ -181,8 +181,8 @@ def checker_loop():
         try:
             dates_to_check = get_all_unique_dates()
             if not dates_to_check:
-                print("No dates to check. Sleeping...")
-                time.sleep(CHECK_INTERVAL)
+                print("No dates to check. Sleeping 60 seconds...")
+                time.sleep(60)
                 continue
 
             print(f"Dates to check: {dates_to_check}")
